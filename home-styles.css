@@ -1,21 +1,27 @@
 .bg-photo {
-    background-image: linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0.5),
-      rgba(47, 48, 58, 0.5)
-    ),
-    url(./img/Background-image.png);
+    background-image: linear-gradient(to right,
+            rgba(47, 48, 58, 0.5),
+            rgba(47, 48, 58, 0.5)),
+        url(./img/Background-image.png);
     background-repeat: no-repeat;
     background-size: cover;
     height: 946px;
 }
 
-body, h1, h2, h3, p, ul {
+body,
+h1,
+h2,
+h3,
+p,
+ul {
     margin: 0;
     font-family: "Lora", serif;
 }
 
-html, *, ::before, ::after {
+html,
+*,
+::before,
+::after {
     box-sizing: border-box;
 }
 
@@ -63,13 +69,13 @@ nav {
 }
 
 .logo {
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   gap: 11px;
-   font-family: "Inter", sans-serif;
-   font-size: 25px;
-   font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 11px;
+    font-family: "Inter", sans-serif;
+    font-size: 25px;
+    font-weight: 700;
 }
 
 .menu a:not(.active) {
@@ -93,9 +99,9 @@ nav {
 }
 
 .yellow-btn:hover {
-   transform: scale(1.1);
-   transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
-   box-shadow: rgba(251, 250, 250, 0.25) 0px 54px 55px, rgba(253, 252, 252, 0.12) 0px -12px 30px, rgba(252, 252, 252, 0.12) 0px 4px 6px, rgba(254, 254, 254, 0.17) 0px 12px 13px, rgba(253, 253, 253, 0.09) 0px -3px 5px;
+    transform: scale(1.1);
+    transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+    box-shadow: rgba(251, 250, 250, 0.25) 0px 54px 55px, rgba(253, 252, 252, 0.12) 0px -12px 30px, rgba(252, 252, 252, 0.12) 0px 4px 6px, rgba(254, 254, 254, 0.17) 0px 12px 13px, rgba(253, 253, 253, 0.09) 0px -3px 5px;
 }
 
 .menu a:not(.active):hover {
@@ -115,7 +121,10 @@ nav {
     gap: 16px;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
     font-family: "Cormorant Garamond", serif;
 }
 
@@ -128,8 +137,11 @@ h1, h2, h3, h4 {
 .section-text {
     line-height: 26px;
     color: #ededed;
-    width: 70%;
     font-size: 18px;
+}
+
+.main-banner-section-text {
+    width: 70%;
 }
 
 .main-banner h1 {
@@ -151,4 +163,52 @@ h1, h2, h3, h4 {
 
 .dark-section {
     background-color: #01101D;
+    padding: 100px 0;
+    position: relative;
+}
+
+.text-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dark-section-text {
+    width: 60%;
+}
+
+.section-title {
+    font-size: 48px;
+    color: #FDFDFD;
+    font-weight: 600;
+    line-height: 115%;
+}
+
+.dark-section-text-item {
+    width: 100%;
+}
+
+.dark-section-text-item:first-child {
+    margin-bottom: 32px
+}
+
+.rating-list {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 56px;
+}
+
+.image-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+}
+.ellips{
+    width: 273px;
+    height: 273px;
+    box-shadow: rgba(255, 255, 255, 0.56) 0px 22px 70px 4px;
+    border-radius: 50%;
+    background-color: rgb(2,17,31 0.4);
+    position: absolute;
+    bottom:-50px;
+    left:-40px;
 }
