@@ -1,16 +1,16 @@
 .bg-photo {
     background-image: linear-gradient(
-    to right,
-    rgba(47, 48, 58, 0.5),
-    rgba(47, 48, 58, 0.5)
-),
-    url(./img/background-image.png);
+      to right,
+      rgba(47, 48, 58, 0.5),
+      rgba(47, 48, 58, 0.5)
+    ),
+    url(./img/Background-image.png);
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: cover;
     height: 946px;
 }
 
-body,h1,h2,h3,p,ul {
+body, h1, h2, h3, p, ul {
     margin: 0;
     font-family: "Lora", serif;
 }
@@ -18,31 +18,35 @@ body,h1,h2,h3,p,ul {
 html, *, ::before, ::after {
     box-sizing: border-box;
 }
-ul{
+
+ul {
     list-style-type: none;
     padding: 0;
 }
 
-a{
-color:#FFF;
-text-decoration: none;
-font-family: "Lora", serif;
-
+a {
+    color: #fff;
+    text-decoration: none;
+    font-family: "Lora", serif;
 }
-button{
+
+button {
     border: none;
-    background:transparent;
+    background-color: transparent;
     padding: 0;
     font-family: "Lora", serif;
 }
-.container{
+
+.container {
     width: 80%;
     margin: 0 auto;
 }
-header{
-    padding:24px 0;
+
+header {
+    padding: 24px 0;
 }
-nav{
+
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -53,88 +57,98 @@ nav{
     gap: 24px;
     padding: 16px 24px;
     background: #00000033;
-    border-radius: 75px;
-}
-.logo{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap:11px;
-    font-family: "Inter", sans-serif;
-    font-size: 25px;
-    font-weight: 700;
-}
-.menu a:not(.active) {
-    color:#D7D7D7;
+    /* background-color: rgba(0, 0, 0, 0.2); */
+    border-radius: 72px;
+
 }
 
-.menu .active{
-    font-weight: 600;
+.logo {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 11px;
+   font-family: "Inter", sans-serif;
+   font-size: 25px;
+   font-weight: 700;
 }
-.yellow-btn{
-    color:#151515;
-    background-color: #F4C73F;
-    padding:12px 14px;
-    border-radius: 24px;
-    font-weight: 500;
-    font-size:16px;
-    cursor: pointer;
-    transition: all 3s cubic-bezier(0.075, 0.82, 0.165, 1);
-    
-}
-.yellow-btn:hover{
-    transform: scale(1.1);
-    transition: all 3s cubic-bezier(0.075, 0.82, 0.165, 1);
-    box-shadow: rgba(255, 255, 255, 0.25) 0px 54px 55px, rgba(255, 255, 255, 0.25) 0px -12px 30px, rgba(255, 255, 255, 0.25) 0px 4px 6px, rgba(255, 255, 255, 0.25) 0px 12px 13px, rgba(255, 255, 255, 0.25) 0px -3px 5px;
-}
-.menu a:not(.active):hover {
-    color:#F4C73F;
+
+.menu a:not(.active) {
+    color: #D7D7D7;
     transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
-.main-banner{
+
+.menu .active {
+    font-weight: 600;
+}
+
+.yellow-btn {
+    color: #151515;
+    background-color: #F4C73F;
+    padding: 12px 14px;
+    border-radius: 24px;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.yellow-btn:hover {
+   transform: scale(1.1);
+   transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+   box-shadow: rgba(251, 250, 250, 0.25) 0px 54px 55px, rgba(253, 252, 252, 0.12) 0px -12px 30px, rgba(252, 252, 252, 0.12) 0px 4px 6px, rgba(254, 254, 254, 0.17) 0px 12px 13px, rgba(253, 253, 253, 0.09) 0px -3px 5px;
+}
+
+.menu a:not(.active):hover {
+    color: #F4C73F;
+    transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.main-banner {
     width: 60%;
     height: calc(100% - 100px);
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    color:#FDFDFD;
+    color: #fdfdfd;
     text-align: center;
     gap: 16px;
 }
-h1,h2,h3,h4{
+
+h1, h2, h3, h4 {
     font-family: "Cormorant Garamond", serif;
 }
-.yellow-title{
-    color:#F9E68E;
+
+.yellow-title {
+    color: #F9E68E;
     font-size: 48px;
     font-weight: 600;
 }
-.section-text{
-    line-height:26px;
-    color:#ededed;
+
+.section-text {
+    line-height: 26px;
+    color: #ededed;
     width: 70%;
-    font-size:18px;
+    font-size: 18px;
 }
-.main-banner h1{
-    font-size:92px;
+
+.main-banner h1 {
+    font-size: 92px;
     line-height: 105%;
-    font-weight: 400;
-    width: 80%;
+    font-weight: 600;
+    width: 70%;
 }
-.without-bg{
+
+.without-bg {
     background-color: #010614;
-    color:#EDEDED;
+    color: #EDEDED;
     margin-right: 8px;
-    
 }
-.buttons-container{
-    margin-top:16px;
+
+.buttons-container {
+    margin-top: 16px;
 }
-.dark-section{
+
+.dark-section {
     background-color: #01101D;
-    
-}
-.section-title{
-    color:#EDEDED;
 }
